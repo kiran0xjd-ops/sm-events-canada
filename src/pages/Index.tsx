@@ -6,6 +6,9 @@ import img3 from "@/assets/stage-backdrop.jpg";
 import img4 from "@/assets/lounge-setup.jpg";
 import img5 from "@/assets/floral-centerpieces.jpg";
 import img6 from "@/assets/birthday-backdrop.jpg";
+const gallery2 = "/lovable-uploads/7e9f5bf1-c188-43ab-97ec-0105e4262da5.png";
+const gallery3 = "/lovable-uploads/2bfdff77-1dc9-4bf3-ba2d-3b998dc4d3b8.png";
+const gallery4 = "/lovable-uploads/874ba82d-fab0-4685-bace-a33b50516898.png";
 
 const Index = () => {
   const handleMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
@@ -118,7 +121,7 @@ const Index = () => {
           <div className="container mx-auto">
             <h2 className="font-display text-3xl md:text-4xl mb-10">Our Work</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[img1,img2,img3,img4,img5,img6].map((src, i) => (
+              {[img1,gallery2,gallery3,gallery4,img5,img6].map((src, i) => (
                 <figure key={i} className="overflow-hidden rounded-xl glass-card">
                   <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
                 </figure>
