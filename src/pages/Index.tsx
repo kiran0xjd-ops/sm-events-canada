@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images, PartyPopper } from "lucide-react";
 import img1 from "@/assets/ceremony-arch.jpg";
 import img2 from "@/assets/table-decor.jpg";
 import img3 from "@/assets/stage-backdrop.jpg";
@@ -20,7 +20,13 @@ const Index = () => {
     <div>
       <header className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b">
         <nav className="container mx-auto flex items-center justify-between py-4">
-          <a href="#home" className="font-display text-2xl font-semibold text-gradient">S&M Events Canada</a>
+          <a href="#home" className="font-display text-2xl font-semibold text-gradient inline-flex items-center gap-2">
+            <span className="inline-flex items-center justify-center h-8 w-8 rounded-full border border-primary/40 text-primary">
+              <PartyPopper className="h-4 w-4" aria-hidden="true" />
+              <span className="sr-only">S & M Events Canada logo</span>
+            </span>
+            <span>S & M Events Canada</span>
+          </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
             <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
@@ -91,12 +97,12 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl mb-10">Services</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                {title:"Weddings & Engagements Décor",desc:"Arches, aisles, sweetheart tables, and elegant backdrops."},
-                {title:"Backdrops & Photo Walls",desc:"Drapery, shimmer walls, floral frames, and custom signage."},
-                {title:"Tabletop & Linens",desc:"Chargers, centerpieces, candles, runners, and premium linens."},
-                {title:"Lounge & Seating",desc:"Throne chairs, sofas, cocktail tables, and accent furniture."},
-                {title:"Balloon Garlands",desc:"Tasteful palettes with organic shapes and luxe finishes."},
-                {title:"Staging & Lighting",desc:"Uplighting, pedestals, cake stands, and stage décor."},
+                {title:"Event Décor",desc:"Arches, aisles, backdrops, floral frames, and stylish accents for weddings, engagements, birthdays, and more."},
+                {title:"Furniture Rentals",desc:"Chairs, tables, and a wide variety of pieces to make your event perfect."},
+                {title:"Tabletop & Linen Rentals",desc:"Premium linens, runners, candles, and centerpieces for a refined table setting."},
+                {title:"Balloon Décor",desc:"Custom balloon garlands, organic shapes, and luxe colour palettes to add a fun and stylish touch."},
+                {title:"Staging",desc:"Pedestals, cake stands, and stage décor to enhance your event atmosphere."},
+                {title:"Photo Walls & Backdrops",desc:"Shimmer walls, drapery, and themed setups perfect for memorable photos."},
               ].map((s) => (
                 <div key={s.title} className="glass-card rounded-xl p-6 hover:translate-y-1 transition-transform">
                   <h3 className="font-semibold mb-2">{s.title}</h3>
@@ -129,16 +135,16 @@ const Index = () => {
               <p className="text-muted-foreground mb-6 max-w-prose">Reach out with your date, venue, and inspiration—we’ll craft a tailored proposal and handle the rest.</p>
               <div className="space-y-3">
                 <div className="flex items-center gap-3"><Phone className="text-primary" /> <a href="tel:+15555551234" className="hover:underline">+1 (555) 555-1234</a></div>
-                <div className="flex items-center gap-3"><Mail className="text-primary" /> <a href="mailto:hello@sm-events.ca" className="hover:underline">hello@sm-events.ca</a></div>
+                <div className="flex items-center gap-3"><Mail className="text-primary" /> <a href="mailto:smeventscanada@gmail.com" className="hover:underline">smeventscanada@gmail.com</a></div>
                 <div className="flex items-center gap-3"><MapPin className="text-primary" /> <span>Canada • Available for travel</span></div>
               </div>
             </div>
             <div className="glass-card rounded-2xl p-8">
               <h3 className="font-display text-2xl mb-4">Connect with us</h3>
               <div className="flex items-center gap-4">
-                <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Facebook /></a>
-                <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram /></a>
-                <a aria-label="Email" href="mailto:hello@sm-events.ca" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Mail /></a>
+                <a aria-label="Facebook" href="https://www.facebook.com/SandM.Events.Ca" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Facebook /></a>
+                <a aria-label="Instagram" href="https://www.instagram.com/s_m_events_ca?igsh=MXdpanA4YXFweGNrYw==" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram /></a>
+                <a aria-label="Email" href="mailto:smeventscanada@gmail.com" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Mail /></a>
               </div>
             </div>
           </div>
