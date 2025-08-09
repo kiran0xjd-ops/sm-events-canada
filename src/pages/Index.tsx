@@ -1,12 +1,161 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
+import img1 from "@/assets/ceremony-arch.jpg";
+import img2 from "@/assets/table-decor.jpg";
+import img3 from "@/assets/stage-backdrop.jpg";
+import img4 from "@/assets/lounge-setup.jpg";
+import img5 from "@/assets/floral-centerpieces.jpg";
+import img6 from "@/assets/birthday-backdrop.jpg";
 
 const Index = () => {
+  const handleMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    e.currentTarget.style.setProperty("--x", `${x}%`);
+    e.currentTarget.style.setProperty("--y", `${y}%`);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div>
+      <header className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b">
+        <nav className="container mx-auto flex items-center justify-between py-4">
+          <a href="#home" className="font-display text-2xl font-semibold text-gradient">S&M Events Canada</a>
+          <div className="hidden md:flex items-center gap-6">
+            <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+            <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
+            <a href="#gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Our Work</a>
+            <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+            <a href="#gallery" className="inline-flex"><Button className="btn-elevate" variant="default"><Images className="mr-2 h-4 w-4" /> View our work</Button></a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        {/* Hero */}
+        <section id="home" onMouseMove={handleMouseMove} className="bg-hero">
+          <div className="container mx-auto grid md:grid-cols-2 items-center gap-10 py-24">
+            <div>
+              <h1 className="font-display text-4xl md:text-6xl leading-tight tracking-tight mb-6">
+                <span className="text-gradient">Elegant Event Rentals & Décor</span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-prose">
+                Transforming venues into unforgettable experiences—weddings, engagements, birthdays, and corporate gatherings across Canada.
+              </p>
+              <div className="flex items-center gap-4">
+                <a href="#contact"><Button className="btn-elevate" variant="default">Contact us</Button></a>
+                <a href="#services"><Button variant="secondary">Our services</Button></a>
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl p-6 md:p-8 animate-floaty">
+              <div className="grid grid-cols-2 gap-3">
+                <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="rounded-lg" />
+                <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="rounded-lg" />
+                <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="rounded-lg" />
+                <img src={img4} alt="Chic lounge setup with velvet seating and gold tables" loading="lazy" className="rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About */}
+        <section id="about" className="py-20">
+          <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-start">
+            <article>
+              <h2 className="font-display text-3xl md:text-4xl mb-6">Our Story</h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Welcome to S&M Events Canada. We specialize in creating elegant, stylish, and memorable events. From weddings and engagements to birthdays and corporate gatherings, our team transforms your vision into reality with beautiful décor, high-quality rentals, and personalized service.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                At S&M Events Canada, every detail matters. Whether you’re looking for a chic modern setup, timeless classic décor, or something uniquely you, we bring creativity, professionalism, and passion to every celebration.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {["Stylish designs tailored to your theme","Seamless setup and takedown","Quality rentals for every occasion","A stress-free, enjoyable planning experience"].map((item) => (
+                  <div key={item} className="flex items-start gap-2">
+                    <CheckCircle2 className="text-primary h-5 w-5 mt-0.5" />
+                    <span className="text-sm text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </article>
+            <aside className="glass-card rounded-2xl p-8">
+              <h3 className="font-display text-2xl mb-4">What we value</h3>
+              <p className="text-muted-foreground">Creativity, craftsmanship, and care. We curate décor and rentals that elevate your theme while keeping logistics effortless.</p>
+            </aside>
+          </div>
+        </section>
+
+        {/* Services */}
+        <section id="services" className="py-20 bg-secondary/30">
+          <div className="container mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl mb-10">Services</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {title:"Weddings & Engagements Décor",desc:"Arches, aisles, sweetheart tables, and elegant backdrops."},
+                {title:"Backdrops & Photo Walls",desc:"Drapery, shimmer walls, floral frames, and custom signage."},
+                {title:"Tabletop & Linens",desc:"Chargers, centerpieces, candles, runners, and premium linens."},
+                {title:"Lounge & Seating",desc:"Throne chairs, sofas, cocktail tables, and accent furniture."},
+                {title:"Balloon Garlands",desc:"Tasteful palettes with organic shapes and luxe finishes."},
+                {title:"Staging & Lighting",desc:"Uplighting, pedestals, cake stands, and stage décor."},
+              ].map((s) => (
+                <div key={s.title} className="glass-card rounded-xl p-6 hover:translate-y-1 transition-transform">
+                  <h3 className="font-semibold mb-2">{s.title}</h3>
+                  <p className="text-sm text-muted-foreground">{s.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Gallery */}
+        <section id="gallery" className="py-20">
+          <div className="container mx-auto">
+            <h2 className="font-display text-3xl md:text-4xl mb-10">Our Work</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[img1,img2,img3,img4,img5,img6].map((src, i) => (
+                <figure key={i} className="overflow-hidden rounded-xl glass-card">
+                  <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="py-20 bg-secondary/30">
+          <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl mb-6">Let’s create something beautiful</h2>
+              <p className="text-muted-foreground mb-6 max-w-prose">Reach out with your date, venue, and inspiration—we’ll craft a tailored proposal and handle the rest.</p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3"><Phone className="text-primary" /> <a href="tel:+15555551234" className="hover:underline">+1 (555) 555-1234</a></div>
+                <div className="flex items-center gap-3"><Mail className="text-primary" /> <a href="mailto:hello@sm-events.ca" className="hover:underline">hello@sm-events.ca</a></div>
+                <div className="flex items-center gap-3"><MapPin className="text-primary" /> <span>Canada • Available for travel</span></div>
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="font-display text-2xl mb-4">Connect with us</h3>
+              <div className="flex items-center gap-4">
+                <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Facebook /></a>
+                <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram /></a>
+                <a aria-label="Email" href="mailto:hello@sm-events.ca" className="p-3 rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Mail /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t">
+        <div className="container mx-auto py-6 text-sm text-muted-foreground flex items-center justify-between">
+          <span>© {new Date().getFullYear()} S&M Events Canada • All rights reserved.</span>
+          <nav className="flex items-center gap-4">
+            <a href="#about" className="hover:text-foreground">About</a>
+            <a href="#services" className="hover:text-foreground">Services</a>
+            <a href="#gallery" className="hover:text-foreground">Our Work</a>
+            <a href="#contact" className="hover:text-foreground">Contact</a>
+          </nav>
+        </div>
+      </footer>
     </div>
   );
 };

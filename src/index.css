@@ -8,89 +8,91 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Palette inspired by your reference image: deep forest green + dusty rose */
+    --background: 24 33% 97%; /* warm ivory */
+    --foreground: 210 15% 14%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 24 33% 99%;
+    --card-foreground: 210 15% 14%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 24 33% 99%;
+    --popover-foreground: 210 15% 14%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 165 24% 18%; /* forest green */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 8 24% 78%; /* dusty rose */
+    --secondary-foreground: 165 24% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 8 28% 92%;
+    --muted-foreground: 215.4 16.3% 32.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 42 70% 50%; /* golden accent */
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 72% 45%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 24 20% 86%;
+    --input: 24 20% 86%;
+    --ring: 165 24% 18%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Sidebar (not used heavily but aligned) */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-primary: 165 24% 18%;
     --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 8 24% 90%;
+    --sidebar-accent-foreground: 165 24% 18%;
+    --sidebar-border: 24 20% 86%;
+    --sidebar-ring: 165 50% 40%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Extra tokens */
+    --primary-glow: 165 24% 28%;
+    --rose: 8 24% 84%;
+    --gradient-hero: radial-gradient(1200px 600px at var(--x,50%) var(--y,0%), hsl(var(--primary) / 0.25), transparent 60%), linear-gradient(135deg, hsl(var(--secondary) / 0.45), hsl(var(--background)));
+    --shadow-elegant: 0 20px 40px -16px hsl(var(--primary) / 0.25);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 165 22% 10%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 165 22% 12%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 165 22% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 165 35% 80%;
+    --primary-foreground: 165 24% 12%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 8 24% 28%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 165 17% 16%;
+    --muted-foreground: 215 20.2% 74.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 42 70% 55%;
+    --accent-foreground: 165 24% 12%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62.8% 40.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 165 17% 18%;
+    --input: 165 17% 18%;
+    --ring: 165 35% 70%;
+
+    --sidebar-background: 165 22% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 165 35% 70%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 165 17% 16%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 165 17% 16%;
+    --sidebar-ring: 165 35% 70%;
   }
 }
 
@@ -100,6 +102,31 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
   }
+}
+
+/* Utilities bound to design tokens */
+@layer utilities {
+  .bg-hero { background: var(--gradient-hero); }
+  .glass-card {
+    background-color: hsl(var(--card) / 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-elegant);
+    border: 1px solid hsl(var(--border));
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .btn-elevate { box-shadow: var(--shadow-elegant); }
+}
+
+/* Motion (respects prefers-reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes floaty { 0%, 100% { transform: translateY(0px);} 50% { transform: translateY(-6px);} }
+  .animate-floaty { animation: floaty 6s ease-in-out infinite; }
 }
