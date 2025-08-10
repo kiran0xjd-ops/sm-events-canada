@@ -42,7 +42,7 @@ const Index = () => {
           <div className="container mx-auto grid md:grid-cols-2 items-center gap-10 py-24">
             <div>
               <h1 className="font-display text-4xl md:text-6xl leading-tight tracking-tight mb-6">
-                <span className="text-gradient">Elegant Event Rentals & Décor</span>
+                <span className="text-gradient">S & M Events Canada</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-prose">
                 Transforming venues into unforgettable experiences—weddings, engagements, birthdays, and corporate gatherings across Canada.
