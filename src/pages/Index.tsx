@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images, PartyPopper } from "lucide-react";
+import type React from "react";
 import img1 from "@/assets/ceremony-arch.jpg";
 import img2 from "@/assets/table-decor.jpg";
 import img3 from "@/assets/stage-backdrop.jpg";
