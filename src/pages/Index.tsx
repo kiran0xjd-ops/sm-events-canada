@@ -127,8 +127,10 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl mb-10">Our Work</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[img1,gallery2,gallery3,gallery4,img5,img6].map((src, i) => (
-                <figure key={i} className="overflow-hidden rounded-xl glass-card">
-                  <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
+                <figure key={i} className="rounded-xl glass-card overflow-hidden">
+                  <AspectRatio ratio={4 / 3} className="w-full">
+                    <img src={src} loading="lazy" decoding="async" alt={`S & M Events Canada gallery image ${i + 1}`} className="h-full w-full object-cover" />
+                  </AspectRatio>
                 </figure>
               ))}
             </div>
