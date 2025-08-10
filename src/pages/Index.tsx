@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images, PartyPopper } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
 import type React from "react";
 import img1 from "@/assets/ceremony-arch.jpg";
 import img2 from "@/assets/table-decor.jpg";
@@ -25,13 +25,7 @@ const Index = () => {
     <div>
       <header className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b">
         <nav className="container mx-auto flex items-center justify-between py-4">
-          <a href="#home" className="font-display text-2xl font-semibold text-gradient inline-flex items-center gap-2">
-            <span className="inline-flex items-center justify-center h-8 w-8 rounded-full border border-primary/40 text-primary">
-              <PartyPopper className="h-4 w-4" aria-hidden="true" />
-              <span className="sr-only">S & M Events Canada logo</span>
-            </span>
-            <span>S & M Events Canada</span>
-          </a>
+          <a href="#home" className="font-display text-2xl font-semibold text-gradient inline-flex items-center">S & M Events Canada</a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
             <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
