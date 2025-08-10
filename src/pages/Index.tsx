@@ -5,7 +5,7 @@ import type React from "react";
 import img1 from "@/assets/ceremony-arch.jpg";
 import img2 from "@/assets/table-decor.jpg";
 import img3 from "@/assets/stage-backdrop.jpg";
-import img4 from "@/assets/lounge-setup.jpg";
+
 import img5 from "@/assets/floral-centerpieces.jpg";
 import img6 from "@/assets/birthday-backdrop.jpeg";
 const gallery2 = "/lovable-uploads/7e9f5bf1-c188-43ab-97ec-0105e4262da5.png";
@@ -57,7 +57,7 @@ const Index = () => {
                 <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="rounded-lg" />
                 <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="rounded-lg" />
                 <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="rounded-lg" />
-                <img src={img4} alt="Chic lounge setup with velvet seating and gold tables" loading="lazy" className="rounded-lg" />
+                <img src="/lovable-uploads/56443286-f826-48bb-bb6b-69e38159a9f8.png" alt="Elegant wedding ceremony arch with white and lavender drapery - S & M Events Canada" loading="lazy" className="rounded-lg" />
               </div>
             </div>
           </div>
