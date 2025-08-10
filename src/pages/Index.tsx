@@ -10,7 +10,7 @@ import img3 from "@/assets/stage-backdrop.jpg";
 import img5 from "@/assets/floral-centerpieces.jpg";
 const gallery6 = "/lovable-uploads/7b2bf313-68a4-4746-aa84-be965c80d1d1.png";
 const gallery2 = "/lovable-uploads/7e9f5bf1-c188-43ab-97ec-0105e4262da5.png";
-const gallery3 = "/lovable-uploads/2bfdff77-1dc9-4bf3-ba2d-3b998dc4d3b8.png";
+const gallery3 = "/lovable-uploads/47dc5f46-857b-476b-b251-fe3334c703dd.png";
 const gallery4 = "/lovable-uploads/c12b6b0c-c635-4886-9708-23d355df7f43.png";
 
 const Index = () => {
