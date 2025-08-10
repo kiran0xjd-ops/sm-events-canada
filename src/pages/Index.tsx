@@ -139,7 +139,7 @@ const Index = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3"><Phone className="text-primary" /> <a href="tel:+12506081443" className="hover:underline">+1 (250) 608-1443 | +1 (519) 891-1443</a></div>
                 <div className="flex items-center gap-3"><Mail className="text-primary" /> <a href="mailto:smeventscanada@gmail.com" className="hover:underline">smeventscanada@gmail.com</a></div>
-                <div className="flex items-center gap-3"><MapPin className="text-primary" /> </div>
+                <div className="flex items-center gap-3"><MapPin className="text-primary" /> <span>Canada</span></div>
               </div>
             </div>
             <div className="glass-card rounded-2xl p-8">
