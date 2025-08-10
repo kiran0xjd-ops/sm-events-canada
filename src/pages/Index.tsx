@@ -6,7 +6,7 @@ import img2 from "@/assets/table-decor.jpg";
 import img3 from "@/assets/stage-backdrop.jpg";
 import img4 from "@/assets/lounge-setup.jpg";
 import img5 from "@/assets/floral-centerpieces.jpg";
-import img6 from "@/assets/birthday-backdrop.jpg";
+import img6 from "@/assets/birthday-backdrop.jpeg";
 const gallery2 = "/lovable-uploads/7e9f5bf1-c188-43ab-97ec-0105e4262da5.png";
 const gallery3 = "/lovable-uploads/2bfdff77-1dc9-4bf3-ba2d-3b998dc4d3b8.png";
 const gallery4 = "/lovable-uploads/874ba82d-fab0-4685-bace-a33b50516898.png";
