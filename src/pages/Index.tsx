@@ -56,16 +56,16 @@ const Index = () => {
             <div className="glass-card rounded-2xl p-6 md:p-8 animate-floaty">
               <div className="grid grid-cols-2 gap-3">
                 <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
-                  <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="h-full w-full object-contain" />
+                  <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="h-full w-full object-cover" />
                 </AspectRatio>
                 <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
-                  <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="h-full w-full object-contain" />
+                  <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="h-full w-full object-cover" />
                 </AspectRatio>
                 <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
-                  <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="h-full w-full object-contain" />
+                  <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="h-full w-full object-cover" />
                 </AspectRatio>
                 <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
-                  <img src="/lovable-uploads/56443286-f826-48bb-bb6b-69e38159a9f8.png" alt="Elegant wedding ceremony arch with white and lavender drapery - S & M Events Canada" loading="lazy" className="h-full w-full object-contain" />
+                  <img src="/lovable-uploads/d05b210f-b301-4aa3-8f3b-8b14c0ec2f22.png" alt="Birthday backdrop with fairy lights and balloons - S & M Events Canada" loading="lazy" className="h-full w-full object-cover" />
                 </AspectRatio>
               </div>
             </div>
