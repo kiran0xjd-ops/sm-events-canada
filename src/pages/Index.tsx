@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+ 
 import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
 import type React from "react";
 import img1 from "@/assets/ceremony-arch.jpg";
@@ -54,10 +55,18 @@ const Index = () => {
             </div>
             <div className="glass-card rounded-2xl p-6 md:p-8 animate-floaty">
               <div className="grid grid-cols-2 gap-3">
-                <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="rounded-lg" />
-                <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="rounded-lg" />
-                <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="rounded-lg" />
-                <img src="/lovable-uploads/56443286-f826-48bb-bb6b-69e38159a9f8.png" alt="Elegant wedding ceremony arch with white and lavender drapery - S & M Events Canada" loading="lazy" className="rounded-lg" />
+                <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
+                  <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="h-full w-full object-contain" />
+                </AspectRatio>
+                <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
+                  <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="h-full w-full object-contain" />
+                </AspectRatio>
+                <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
+                  <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="h-full w-full object-contain" />
+                </AspectRatio>
+                <AspectRatio ratio={4 / 3} className="rounded-lg overflow-hidden bg-muted/20">
+                  <img src="/lovable-uploads/56443286-f826-48bb-bb6b-69e38159a9f8.png" alt="Elegant wedding ceremony arch with white and lavender drapery - S & M Events Canada" loading="lazy" className="h-full w-full object-contain" />
+                </AspectRatio>
               </div>
             </div>
           </div>
