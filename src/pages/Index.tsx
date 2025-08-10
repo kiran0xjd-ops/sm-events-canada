@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images, PartyPopper } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
 import type React from "react";
 import img1 from "@/assets/ceremony-arch.jpg";
 import img2 from "@/assets/table-decor.jpg";
@@ -24,12 +25,8 @@ const Index = () => {
     <div>
       <header className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b">
         <nav className="container mx-auto flex items-center justify-between py-4">
-          <a href="#home" className="font-display text-2xl font-semibold text-gradient inline-flex items-center gap-2">
-            <span className="inline-flex items-center justify-center h-8 w-8 rounded-full border border-primary/40 text-primary">
-              <PartyPopper className="h-4 w-4" aria-hidden="true" />
-              <span className="sr-only">S & M Events Canada logo</span>
-            </span>
-            <span>S & M Events Canada</span>
+          <a href="#home" className="inline-flex items-center">
+            <img src="/lovable-uploads/545379b7-45f3-4b2a-b610-f10069f32e47.png" alt="Eventt Rentals logo" className="h-10 w-auto" loading="eager" />
           </a>
           <div className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
@@ -59,10 +56,26 @@ const Index = () => {
             </div>
             <div className="glass-card rounded-2xl p-6 md:p-8 animate-floaty">
               <div className="grid grid-cols-2 gap-3">
-                <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="rounded-lg" />
-                <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="rounded-lg" />
-                <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="rounded-lg" />
-                <img src={img4} alt="Chic lounge setup with velvet seating and gold tables" loading="lazy" className="rounded-lg" />
+                <div className="rounded-lg overflow-hidden">
+                  <AspectRatio ratio={4/3}>
+                    <img src={img1} alt="Wedding ceremony arch with greenery and drapery" loading="lazy" className="w-full h-full object-cover" />
+                  </AspectRatio>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <AspectRatio ratio={4/3}>
+                    <img src={img2} alt="Reception table with dusty rose linens and gold accents" loading="lazy" className="w-full h-full object-cover" />
+                  </AspectRatio>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <AspectRatio ratio={4/3}>
+                    <img src={img3} alt="Stage backdrop with flowing drapery and soft lighting" loading="lazy" className="w-full h-full object-cover" />
+                  </AspectRatio>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <AspectRatio ratio={4/3}>
+                    <img src={img4} alt="Chic lounge setup with velvet seating and gold tables" loading="lazy" className="w-full h-full object-cover" />
+                  </AspectRatio>
+                </div>
               </div>
             </div>
           </div>
@@ -124,7 +137,9 @@ const Index = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[img1,gallery2,gallery3,gallery4,img5,img6].map((src, i) => (
                 <figure key={i} className="overflow-hidden rounded-xl glass-card">
-                  <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
+                  <AspectRatio ratio={4/3}>
+                    <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
+                  </AspectRatio>
                 </figure>
               ))}
             </div>
