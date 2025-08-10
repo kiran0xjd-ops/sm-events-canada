@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
 import type React from "react";
@@ -119,11 +118,9 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl mb-10">Our Work</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[img1,gallery2,gallery3,gallery4,img5,img6].map((src, i) => (
-                  <figure key={i} className="overflow-hidden rounded-xl glass-card">
-                    <AspectRatio ratio={4 / 3}>
-                      <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
-                    </AspectRatio>
-                  </figure>
+                <figure key={i} className="overflow-hidden rounded-xl glass-card">
+                  <img src={src} loading="lazy" alt={`S&M Events Canada gallery image ${i+1}`} className="w-full h-full object-cover" />
+                </figure>
               ))}
             </div>
           </div>
