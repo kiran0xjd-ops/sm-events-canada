@@ -12,7 +12,7 @@ const About = () => {
         <nav className="container mx-auto flex items-center justify-between py-4">
           <a href="/" className="font-display text-2xl font-semibold text-gradient inline-flex items-center">S & M Events Canada</a>
           <div className="hidden md:flex items-center gap-6">
-            <a href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+            <a href="/#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
             <a href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
             <a href="/#gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Our Work</a>
             <a href="/#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
