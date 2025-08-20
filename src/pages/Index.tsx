@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Link } from "react-router-dom";
  
 import { Facebook, Instagram, Mail, Phone, MapPin, CheckCircle2, Images } from "lucide-react";
 import type React from "react";
@@ -28,8 +29,8 @@ const Index = () => {
         <nav className="container mx-auto flex items-center justify-between py-4">
           <a href="#home" className="font-display text-2xl font-semibold text-gradient inline-flex items-center">S & M Events Canada</a>
           <div className="hidden md:flex items-center gap-6">
-            <a href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
-            <a href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
+            <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
+            <Link to="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</Link>
             <a href="#gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Our Work</a>
             <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
             <a href="#gallery" className="inline-flex"><Button className="btn-elevate" variant="default"><Images className="mr-2 h-4 w-4" /> View our work</Button></a>
@@ -165,8 +166,8 @@ const Index = () => {
         <div className="container mx-auto py-6 text-sm text-muted-foreground flex items-center justify-between">
           <span>© {new Date().getFullYear()} S&M Events Canada • All rights reserved.</span>
           <nav className="flex items-center gap-4">
-            <a href="/about" className="hover:text-foreground">About</a>
-            <a href="/services" className="hover:text-foreground">Services</a>
+            <Link to="/about" className="hover:text-foreground">About</Link>
+            <Link to="/services" className="hover:text-foreground">Services</Link>
             <a href="#gallery" className="hover:text-foreground">Our Work</a>
             <a href="#contact" className="hover:text-foreground">Contact</a>
           </nav>
