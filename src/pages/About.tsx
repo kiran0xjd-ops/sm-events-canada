@@ -50,7 +50,7 @@ const About = () => {
         <div className="container mx-auto py-6 text-sm text-muted-foreground flex items-center justify-between">
           <span>© {new Date().getFullYear()} S&M Events Canada • All rights reserved.</span>
           <nav className="flex items-center gap-4">
-            <a href="/about" className="hover:text-foreground">About</a>
+            <a href="/#about" className="hover:text-foreground">About</a>
             <a href="/services" className="hover:text-foreground">Services</a>
             <a href="/#gallery" className="hover:text-foreground">Our Work</a>
             <a href="/#contact" className="hover:text-foreground">Contact</a>
