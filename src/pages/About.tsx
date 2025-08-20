@@ -6,13 +6,13 @@ const About = () => {
       <Helmet>
         <title>About S & M Events Canada | Event Décor & Rentals</title>
         <meta name="description" content="Discover S & M Events Canada — our story, values, and commitment to elegant event décor and rentals across Canada." />
-        <link rel="canonical" href="https://sandmeventscanada.ca/#about" />
+        <link rel="canonical" href="https://sandmeventscanada.ca/about" />
       </Helmet>
       <header className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b">
         <nav className="container mx-auto flex items-center justify-between py-4">
           <a href="/" className="font-display text-2xl font-semibold text-gradient inline-flex items-center">S & M Events Canada</a>
           <div className="hidden md:flex items-center gap-6">
-            <a href="/#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+            <a href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
             <a href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
             <a href="/#gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Our Work</a>
             <a href="/#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
@@ -50,7 +50,7 @@ const About = () => {
         <div className="container mx-auto py-6 text-sm text-muted-foreground flex items-center justify-between">
           <span>© {new Date().getFullYear()} S&M Events Canada • All rights reserved.</span>
           <nav className="flex items-center gap-4">
-            <a href="/#about" className="hover:text-foreground">About</a>
+            <a href="/about" className="hover:text-foreground">About</a>
             <a href="/services" className="hover:text-foreground">Services</a>
             <a href="/#gallery" className="hover:text-foreground">Our Work</a>
             <a href="/#contact" className="hover:text-foreground">Contact</a>
