@@ -6,7 +6,7 @@ const About = () => {
       <Helmet>
         <title>About S & M Events Canada | Event Décor & Rentals</title>
         <meta name="description" content="Discover S & M Events Canada — our story, values, and commitment to elegant event décor and rentals across Canada." />
-        <link rel="canonical" href="https://sandmeventscanada.ca/about" />
+        <link rel="canonical" href="https://sandmeventscanada.ca/#about" />
       </Helmet>
       <header className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b">
         <nav className="container mx-auto flex items-center justify-between py-4">
